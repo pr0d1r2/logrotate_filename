@@ -6,7 +6,7 @@ require File.dirname(__FILE__) + '/lib/logrotate_filename'
 $hoe = Hoe.new('logrotate_filename', LogrotateFilename::VERSION) do |p|
   p.developer('Marcin Nowicki', 'pr0d1r2@gmail.com')
   p.changes              = p.paragraphs_of("History.txt", 0..1).join("\n\n")
-  p.rubyforge_name       = p.name # TODO this is default value
+  p.rubyforge_name       = p.name
   # p.extra_deps         = [
   #   ['activesupport','>= 2.0.2'],
   # ]
@@ -23,6 +23,6 @@ end
 require 'newgem/tasks' # load /tasks/*.rake
 Dir['tasks/**/*.rake'].each { |t| load t }
 
-# TODO - want other tests/tasks run by default? Add them to the list
+# TO DO - want other tests/tasks run by default? Add them to the list
 # task :default => [:spec, :features]
 
